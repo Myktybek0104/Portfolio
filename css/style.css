@@ -1,0 +1,221 @@
+
+* {
+    margin: 0 auto; 
+    padding: 0;
+}
+header {
+    background:#f7f7f7;
+    box-shadow: 5px 3px 9px 3px #e0ae09d5;
+
+}
+header>nav {
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: space-around;
+}
+header>nav>a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    position: relative;
+}
+header>nav>a:hover {
+    color: #c2b012;
+    transition:0.2sa;
+}
+header>nav>a::after {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 20%;
+    background-color: #69c2ef;
+    width: 0;
+    height: 2px;
+}
+header>nav>a:hover::after {
+    width: 50%;
+    transition: 0.5s all;
+}
+header>nav>a:hover {
+    color: #69c2ef;
+    transition: 0.2s all;
+}
+/* Услуг */
+body {
+    background: linear-gradient(45deg, #8dc22a, #ccac1d);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('../img/12054743.png'), url('../img/images\ \(1\).jpg'), url('../imf/');
+    background-repeat: no-repeat;
+    background-size: 200px, 400px, cover;
+    background-position: 150px 60px, 1400px 400px, 0 0;
+    background-attachment: fixed;
+}
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+section {
+    padding: 60px 0;
+}
+body{
+    font-family: ;
+}
+.container{
+    max-width: 900px;
+    display: flex;
+}
+#about{
+    padding: 60px 0;
+    background:linear-gradient(45deg,rgb(111, 136, 70),red) ;
+}
+.about-card > img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid pink;
+    margin: 10px 0 30px;
+}
+.about-card{
+    background-color: white;
+    width: 33%;
+    margin: 20px;
+    padding: 30 px;
+    box-shadow: 2px 3px 8px rgba(0,0,0,0,5);
+    border-radius:0 0 20px 20px ;
+    display: flex;
+    flex-direction: column;
+}
+#abouth4{
+    font-size: 20px;
+    text-align: center;
+}
+#about ul{
+    margin: 20px;
+    list-style-type: none;
+}
+#about li{
+    line-height: 2;
+}
+#about li::before{
+    content: '\2015';
+}
+.about-card:hover{
+    transform: translate3d(8px,8px,8px);
+    transition: 0,8s all;
+}
+#porfolio {
+    background-color: #a09f4e;
+}
+#porfolio h2, #porfolio p {
+    text-align: center;
+}
+.portfolio-card {
+    background-color: #fcfcfc;
+    margin: 10px;
+    padding: 30px;
+    border: 2px solid #f7f7f7;
+    border-radius: 5px;
+
+}
+.portfolio-card > h3 {
+    text-align: center;
+}
+.portfolio-card:hover {
+    box-shadow: 9px 8px 10px 3px rgb(0 0 0 / 15%);
+    transform: scale(1.1);
+}
+.portfolio-card>img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    
+}
+/* Базовый */
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+    max-width: 900px;
+    display: flex;
+}
+
+section {
+    padding: 60px 0;
+}
+/* Services */
+#services {
+    background-color: #f7f7f7;
+}
+.services-card {
+    width: 33%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.services-icon {
+    width: 80px;
+    height: 80px;
+    border: 2px solid blue;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.services-icon:hover{
+    border: 2px solid white;
+    background-color: blue;
+}
+.services-icon{
+    font-size: 45px;
+    color:brown
+}
+.services-icon>i:hover{
+    color: white;
+}
+.services-card h2{
+    color: blue;
+    text-transform: uppercase;
+    padding: 20px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+}
+.services-card p{
+    text-align: center;
+    font-style: italic;
+    color: rgb(red, green, blue);
+}
+.services-card::after{
+    content: '';
+    margin: 0 auto;
+    position: absolute;
+    bottom: -45px;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    width: 100px;
+    height: 3px;
+}
+.services-card:hover::after {
+    background-color: blue;
+    transition: 0.5s all;
+}
+.services-card:hover .services-icon {
+    border: 2px solid #fff;
+    background-color: blue;
+}
+.services-card:hover .services-icon>i {
+    color: #fff;
+}
